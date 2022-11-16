@@ -1,0 +1,66 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+
+}
+@media screen and (max-width:576px ) {
+    .resp{
+        background-color: pink;
+        
+    }
+    .resp::after{
+        content: "extra small)";
+    }
+}
+
+@media screen and ( min-width: 576px ) and (max-width: 767px) {
+    .resp{
+        background-color: aqua;
+        
+    }
+    .resp::after{
+        content: "sm (small)";
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+    .resp{
+        background-color: brown;
+        
+    }
+    .resp::after{
+        content: "md (medium)";
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .resp{
+        background-color: coral;
+        
+    }
+    .resp::after{
+        content: "lg (large) ";
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px)  {
+    .resp{
+        background-color: blue;
+        
+    }
+    .resp::after{
+        content: "xl (extra large) ";
+    }
+}
+@media screen and (min-width: 1400px) {
+    .resp{
+        background-color: yellow;
+        
+    }
+    .resp::after{
+        content: "xxl (extra extra large) ";
+    }
+}
