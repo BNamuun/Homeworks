@@ -8,93 +8,127 @@
     <title>Sudalgaa</title>
 </head>
 <body>
-   <div class="container">
+    <div class="title">
         <h1 class="form-title"> Social media хэрэглэгчдийн судалгаа</h1>
         <p>Судалгаанд оролцсон танд баярлалаа</p>
+    </div>
+   <div class="container">
         <form action="#">
-            <div class="main-user-info">
-                <div class="input-box">
-                    <label for="fullname">Нэр</label>
-                    <input type="text" 
-                    placeholder="Enter your name" 
-                    id="fullname" 
-                    name="fullname"    required>
-                </div>
-            </div>
-            <div class="main-user-info">
-                <div class="email">
-                    <label for="email">И-мэйл</label>
-                    <input type="text" 
-                    placeholder="Enter your email" 
-                    id="email" 
-                    name="email">
-                </div>
-            </div>
-            <div class="main-user-info">
-                <div class="old">
-                    <label for="old">Нас</label>
-                    <input type="number" placeholder="Enter your old" 
-                    id="old" 
-                    name="old">
-                </div>
+            <div class="first">
+               
+                <fieldset><legend>Ерөнхий мэдээлэл</legend>
+                    <div class="first-gap">
+                        <div class="main-user-info">
+                            <div class="input-box">
+                                <label for="fullname">Нэр</label>
+                                <input type="text" 
+                                placeholder="Enter your name" 
+                                id="fullname" 
+                                name="fullname" required>
+                            </div>
+                        </div>
+                        <div class="main-user-info">
+                            <div class="email">
+                                <label for="email">И-мэйл</label>
+                                <input type="text" 
+                                placeholder="Enter your email" 
+                                id="email" 
+                                name="email" required>
+                            </div>
+                        </div>
+                        <div class="main-user-info">
+                            <div class="old">
+                                <label for="old">Нас</label>
+                                <input type="number" placeholder="Enter your old" 
+                                id="old" 
+                                name="old" min="14" max="99" required>
+                            </div>
+                        </div>
+                    </div>
+            </fieldset>
             </div>
 
             <div class="social-media">
-                <div class="social-use">
-                    <span class="social-media-title">Social media</span>
-                    <div class="use">
-                        <span class="use-title">Та өдөрт хэдэн цаг social media ашигладаг вэ?</span>
-                        <select name="social-use" id="social-use">
-                            <option value="2 hour">1- 2цаг </option>
-                            <option value="3 hour">2- 3цаг </option>
-                            <option value="4 hour">3- 4цаг </option>
-                            <option value="6 hour">4- 6цаг </option>
-                            <option value="8 hour">5- 8цаг </option>
-                            <option value="10 hour">6- 10цаг </option>
-                            <option value="12 hour">7- 12цаг </option>
-                            <option value="15 hour">8- 15цаг </option>
-                        </select>
+                <fieldset><legend> Social media</legend>
+                    <div class="second-gap">
+                        <div class="social-use">
+                            <!-- <span class="social-media-title">Social media</span> -->
+                            <div class="use">
+                                <span class="use-title">Та өдөрт хэдэн цаг social media ашигладаг вэ?</span>
+                                <select name="social-use" id="social-use">
+                                    <option value="2 hour">1- 2цаг </option>
+                                    <option value="3 hour">2- 3цаг </option>
+                                    <option value="4 hour">3- 4цаг </option>
+                                    <option value="6 hour">4- 6цаг </option>
+                                    <option value="8 hour">5- 8цаг </option>
+                                    <option value="10 hour">6- 10цаг </option>
+                                    <option value="12 hour">7- 12цаг </option>
+                                    <option value="15 hour">8- 15цаг </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <span>Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн алийг илүүд үздэг вэ?</span>
+                            <div class="option-category">
+                                <div class="online">
+                                    <input type="radio" name="whichone" id="online">
+                                    <label for="online">Онлайн худалдан авалт</label>
+                                </div>
+                                <div class="shop">
+                                    <input type="radio" name="whichone" id="shop">
+                                    <label for="shop">Дэлгүүр орж худалдан авалт хийх</label>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="platform-type">
+        
+                            <span>Та ямар social media платформ ашигладаг вэ? </span>
+                            <div class="platform-option">
+                                <div class="fb">
+                                    <input type="checkbox" name="platform-type1" id="platform-type1" value="Facebook">
+                                    <label for="platform-type1">Facebook</label>
+                                </div>
+                                <div class="ig">
+                                    <input type="checkbox" name="platform-type2" id="platform-type2" value="Instagram">
+                                    <label for="platform-type2">Instagram</label>
+                                </div>
+                                <div class="twt">
+                                    <input type="checkbox" name="platform-type3" id="platform-type3" value="Twitter">
+                                    <label for="platform-type3">Twitter</label>
+                                </div>
+                                <div class="redd">
+                                    <input type="checkbox" name="platform-type4" id="platform-type4" value="Reddit">
+                                    <label for="platform-type4">Reddit</label>
+                                </div>
+                                <div class="snap">
+                                    <input type="checkbox" name="platform-type5" id="platform-type5" value="Snapchat">
+                                    <label for="platform-type5">Snapchat</label>
+                                </div>
+                                <div class="quor">
+                                    <input type="checkbox" name="platform-type6" id="platform-type6" value="Quora">
+                                    <label for="platform-type6">Quora</label>
+                                </div>
+                                <div class="utube">
+                                    <input type="checkbox" name="platform-type7" id="platform-type7" value="Youtube">
+                                    <label for="platform-type7">Youtube</label>
+                                </div>
+                                <div class="oth">
+                                    <input type="checkbox" name="platform-type8" id="platform-type8" value="Other">
+                                    <label for="platform-type8">Бусад</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="option">
-                    <span>Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн алийг илүүд үздэг вэ?</span>
-                    <div class="option-category">
-                        <input type="radio" name="whichone" id="online">
-                        <label for="online">Онлайн худалдан авалт</label>
-                        <input type="radio" name="whichone" id="shop">
-                        <label for="shop">Дэлгүүр орж худалдан авалт хийх</label>
-                    </div>
-                </div>
-
-                <div class="platform-type">
-                    <span>Та ямар social media платформ ашигладаг вэ? </span>
-                    <div class="platform-option">
-                        <input type="checkbox" name="platform-type1" id="platform-type1" value="Facebook">
-                        <label for="platform-type1">Facebook</label>
-                        <input type="checkbox" name="platform-type2" id="platform-type2" value="Instagram">
-                        <label for="platform-type2">Instagram</label>
-                        <input type="checkbox" name="platform-type3" id="platform-type3" value="Twitter">
-                        <label for="platform-type3">Twitter</label>
-                        <input type="checkbox" name="platform-type4" id="platform-type4" value="Reddit">
-                        <label for="platform-type4">Reddit</label>
-                        <input type="checkbox" name="platform-type5" id="platform-type5" value="Snapchat">
-                        <label for="platform-type5">Snapchat</label>
-                        <input type="checkbox" name="platform-type6" id="platform-type6" value="Quora">
-                        <label for="platform-type6">Quora</label>
-                        <input type="checkbox" name="platform-type7" id="platform-type7" value="Youtube">
-                        <label for="platform-type7">Youtube</label>
-                        <input type="checkbox" name="platform-type8" id="platform-type8" value="Other">
-                        <label for="platform-type8">Бусад</label>
-                    </div>
-                </div>
-                <div class="suggestion">
-                    <!-- <span class="suggestion-title">Санал хүсэлт</span>ы -->
-                    <label for="suggestion-part">Санал хүсэлт</label>
-                    <textarea name="suggestion-part" id="suggestion-part" cols="30" rows="10" placeholder="Санал хүсэлтээ энд бичнэ үү!"></textarea>
-                </div>
-                <div class="submit-btn">
-                    <input type="submit" name="send" id="send" value="Илгээх">
-                </div>
+            </fieldset>
+            </div>
+            <div class="suggestion">
+                <!-- <span class="suggestion-title">Санал хүсэлт</span>ы -->
+                <label for="suggestion-part">Санал хүсэлт</label>
+                <textarea maxlength="300" name="suggestion-part" id="suggestion-part" cols="30" rows="6" placeholder="Санал хүсэлтээ энд бичнэ үү!"></textarea>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" name="send" id="send" value="Илгээх">
             </div>
         </form>
    </div>

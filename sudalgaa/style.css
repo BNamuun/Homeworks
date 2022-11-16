@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"),linear-gradient(to right, #eb7855 0%, #f08e60 30%, #e797f0 60%, #c15df3 100%) ;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.container{
+    width: 100%;
+    max-width: 60vw;
+    background-color: rgba(27, 9, 37, 0.6);
+    padding: 5%;
+}
+.title{
+    display: block;
+    text-align: center;
+}
+
+.first-gap, .second-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5% 0;
+}
+
+.first input, select{
+    width: 100%;
+    padding: 1% 0;
+}
+
+.platform-option{
+    display: flex;
+    flex-direction: column;
+
+}
+.social-media-title{
+    padding-bottom: 5%;
+}
+.suggestion  textarea, .submit-btn input{
+    width: 100%;
+    padding: 1% 0;
+}
+
+fieldset{
+    border: 2px solid grey;
+    padding: 8% 4%;
+}
