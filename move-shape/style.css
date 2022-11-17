@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+.circle-blue{
+    border: 1px solid blue;
+    /* padding: 5%; */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    top:calc(50% - 75px) ;
+    left:calc(50% - 75px) ;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    z-index: 10;
+    transition: 1s 1s linear;
+}
+
+.circle-green{
+    border: 1px solid green;
+    /* padding: 5%; */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    z-index: 5;
+    /* top:calc(50% - 75px);
+    left:calc(50% - 75px); */
+    bottom:calc(50% - 75px);
+    transition: 1s 1s linear;
+}
+.circle-red{
+    border: 1px solid red;
+    /* padding: 5%; */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    z-index: 1;
+}
+.container{
+    height: 800px;
+    width: 800px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container:hover .circle-blue{
+    top: 0;
+    left: 0;
+}
+.container:hover .circle-green{
+    bottom: 0;
+}
+.container:hover .circle-green{
+    right: 0;
+}
